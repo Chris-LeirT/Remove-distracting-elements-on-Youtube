@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           Youtube: Remove useless things
+@namespace      github.com/openstyles/stylus
+@author         minhtri
+@version        1.0.0
+@description    Remove distracting elements on Youtube so that you can be more productivity, you just watch what you actually search for, not by recommendations from a machine
+@author         minhtri
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+
+    /* Remove home page */
+    .ytd-two-column-browse-results-renderer.style-scope {
+        display: none;
+    }
+
+    /* Force always theater mode */
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .theater-toggle {
+        margin: auto;
+    }
+
+    /* Remove right pane */
+    .ytd-watch-next-secondary-results-renderer {
+        display: none;
+    }
+
+    /* Remove left pane */
+    #guide {
+        display: none;
+    }
+    ytd-app[guide-persistent-and-visible] ytd-page-manager.ytd-app {
+        margin-left: 0;
+    }
+    /* Left pane: Remove trend button*/
+    ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(2) {
+        display: none;
+    }
+    /* Left pane: Remove residual home button*/
+    ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer.style-scope:nth-of-type(1) {
+        display: none;
+    }
+
+    /* Remove cards at the end of videos */
+    .ytp-ce-element-show {
+        visibility: collapse !important;
+    }
+
+    /* Remove noti button */
+    ytd-notification-topbar-button-renderer {
+        display: none !important;
+    }
+
+    /* Remove avatars in comment section */
+    #author-thumbnail > .ytd-comment-renderer.style-scope {
+        display: none;
+    }
+}
