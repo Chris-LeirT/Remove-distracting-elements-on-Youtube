@@ -1,4 +1,4 @@
-## Remove-distracting-elements-on-Youtube
+## Remove distracting elements on Youtube
 \
 Description: This code make Youtube less distracting so you won't spend your valuable time for meanless things.\
 \
