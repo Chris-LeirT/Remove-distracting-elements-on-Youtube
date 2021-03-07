@@ -1,6 +1,6 @@
 ## Remove distracting elements on Youtube
 \
-Description: This code make Youtube less distracting so you won't spend your valuable time for meanless things.\
+Description: This code make Youtube less distracting so you won't spend your valuable time for meanless videos.\
 \
 Installation: Install Stylus extension for chrome and import the code.\
 Tutorial video:\
